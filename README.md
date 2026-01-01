@@ -101,15 +101,13 @@ Page 1:
 1. **Rectangle Detection**: Scans PDF content for filled black paths (rectangles, shapes)
 2. **Text Analysis**: Extracts all text from the page and identifies text within redaction boundaries
 3. **Image Analysis**: Detects images positioned under or within redaction areas
-4. **Removal Process**: Overlays white rectangles on top of black redactions
+4. **Removal Process**: Removes rectangle fill commands where found
 5. **Report Generation**: Compiles all findings into a human-readable summary
 
 ## Limitations
 
-- Only processes black rectangles (gray values < 0.1 in grayscale/RGB, or K > 0.9 in CMYK)
-- Minimum rectangle size: 5x5 pixels (ignores smaller artifacts)
-- OCR capabilities depend on the Tesseract library
-- Works best with text-based PDFs (not scanned images)
+- Currently does not check colors of black rectangles (current use case is to remove all rectangle fills)
+- Works best with text-based PDFs (most likely to have black rectangles)
 
 ## License
 
