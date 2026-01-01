@@ -8,7 +8,7 @@ A C# Windows Forms application that searches for PDF files in a folder, removes 
 - **Black Rectangle Detection**: Automatically identifies black rectangles and filled shapes used for redaction
 - **Text Extraction**: Detects and extracts text hidden underneath black rectangles/highlights
 - **Image Detection**: Identifies non-white image data obscured by redactions
-- **Clean PDF Output**: Creates cleaned PDFs with redactions removed (replaced with white rectangles)
+- **Clean PDF Output**: Creates cleaned PDFs with redactions removed (removes black rectangles)
 - **Detailed Summary Reports**: Generates `.txt` files with complete redaction analysis for each PDF
 
 ## Requirements
